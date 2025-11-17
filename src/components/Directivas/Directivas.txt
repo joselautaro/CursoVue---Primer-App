@@ -1,0 +1,46 @@
+1 - v-bind: Enlaza dinamicamente un atributo o propiedad a una expresión
+<img v-bind:src="imagenurl" alt="">
+
+2: v-model: crear un enlace bidireccional entre un input o cualquier otro elemento
+<input v-model="inputValue" placeholder="escribe algo">
+
+3: v-if: controla si el elemento está presente en el dom segun la expresión evaluada
+<p v-if="mostrarTexto">Este texto solo se muestra true</p>
+
+4: v-else y v-else-if: se usan en conjunto para mostrar multiples condiciones
+
+v-else-if y v-else: funcionar como en las sentencias condicionales. Si la primera condicion no es verdadera, se va a evaluar la siguiente con else-if. Si ninguna es verdadera, se ejecutará el v-else.
+
+<p v-if="valor === 1">Valor es 1</p>
+<p v-else-if="valor === 2">Valor es 2</p>
+<p v-else>Valor es diferente de 1 y 2</p>
+
+5: v-for: nos permite iterar una lista de elementos, creando un html por cada entrada
+
+<ul>
+    <li v-for="(item, index) in items" :key="index"> {{item}} </li>
+</ul>
+
+6: v-show: controlar la visilibilidad de un elemento cambiando su estilo display
+<p v-show="isVisible">Este texto está según el valor de isVisible</p>
+
+7: v-on: Escucha elementos del DOM y ejecuta una funcion cuando se dispara un evento
+<button v-on="manejaClick">Haz< Click aquí</button>
+
+8: v-html: insertar html sin escapar en el DOM
+<div v-html="htmlContent"></div>
+
+9: v-pre: indica a vue que no compile ni procese el contenido del elemento donde se aplica
+<span v-pre>{{esteTextoNoSeProcesa}}</span>
+
+10: v-cloak: utilizado como una directiva especial para evitar problemas de parpadeos al iniciar una app
+<div v-cloak>{{mensaje}}</div>
+
+11: v-once: renderiza el elemento solo una vez sin estar atado a la reactividad
+<p v-once>{{mensaje}}</p>
+
+12: v-slot: define un slot de componentes, lo que permite la inserción de contenido dinámico en un componente hijo desde el padre
+<template v-slot:header>
+    <h1>Este es el contenido desde el header</h1>
+</template>
+
