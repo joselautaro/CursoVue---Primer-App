@@ -8,7 +8,8 @@
 // import Ejemplo2 from './components/ProgramacionReactiva/Ejemplo2.vue';
 // import Ejemplo3 from './components/ProgramacionReactiva/Ejemplo3.vue';
 // import Ejemplo4 from './components/ProgramacionReactiva/Ejemplo4.vue';
-import Ejemplo5 from './components/ProgramacionReactiva/Ejemplo5.vue';
+// import Ejemplo5 from './components/ProgramacionReactiva/Ejemplo5.vue';
+import Ejemplo6 from './components/ProgramacionReactiva/Ejemplo6.vue';
 </script>
 
 <template>
@@ -30,7 +31,8 @@ import Ejemplo5 from './components/ProgramacionReactiva/Ejemplo5.vue';
   <!-- <Ejemplo2/> -->
    <!-- <Ejemplo3/> -->
     <!-- <Ejemplo4/> -->
-     <Ejemplo5/>
+     <!-- <Ejemplo5/> -->
+    <Ejemplo6/>
 
 </template>
 
