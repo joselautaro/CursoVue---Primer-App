@@ -1,10 +1,11 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import Hijo5 from './components/Props/Hijo5.vue';
-import Hijo6 from './components/Props/Hijo6.vue';
-import Padre6 from './components/Props/Padre6.vue';
-import Ejemplo1 from './components/ProgramacionReactiva/Ejemplo1.vue';
+// import Hijo5 from './components/Props/Hijo5.vue';
+// import Hijo6 from './components/Props/Hijo6.vue';
+// import Padre6 from './components/Props/Padre6.vue';
+// import Ejemplo1 from './components/ProgramacionReactiva/Ejemplo1.vue';
+import Ejemplo2 from './components/ProgramacionReactiva/Ejemplo2.vue';
 </script>
 
 <template>
@@ -20,9 +21,10 @@ import Ejemplo1 from './components/ProgramacionReactiva/Ejemplo1.vue';
     <TheWelcome />
   </main> -->
   <h1>Hola Mundo</h1>
-  <Hijo5/>
+  <!-- <Hijo5/>
   <Padre6/>
-  <Ejemplo1/>
+  <Ejemplo1/> -->
+  <Ejemplo2/>
 </template>
 
 <style scoped>
