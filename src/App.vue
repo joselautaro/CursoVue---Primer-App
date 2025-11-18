@@ -5,7 +5,9 @@
 // import Hijo6 from './components/Props/Hijo6.vue';
 // import Padre6 from './components/Props/Padre6.vue';
 // import Ejemplo1 from './components/ProgramacionReactiva/Ejemplo1.vue';
-import Ejemplo2 from './components/ProgramacionReactiva/Ejemplo2.vue';
+// import Ejemplo2 from './components/ProgramacionReactiva/Ejemplo2.vue';
+// import Ejemplo3 from './components/ProgramacionReactiva/Ejemplo3.vue';
+import Ejemplo4 from './components/ProgramacionReactiva/Ejemplo4.vue';
 </script>
 
 <template>
@@ -24,7 +26,10 @@ import Ejemplo2 from './components/ProgramacionReactiva/Ejemplo2.vue';
   <!-- <Hijo5/>
   <Padre6/>
   <Ejemplo1/> -->
-  <Ejemplo2/>
+  <!-- <Ejemplo2/> -->
+   <!-- <Ejemplo3/> -->
+    <Ejemplo4/>
+
 </template>
 
 <style scoped>
