@@ -4,6 +4,7 @@
 import Hijo5 from './components/Props/Hijo5.vue';
 import Hijo6 from './components/Props/Hijo6.vue';
 import Padre6 from './components/Props/Padre6.vue';
+import Ejemplo1 from './components/ProgramacionReactiva/Ejemplo1.vue';
 </script>
 
 <template>
@@ -21,6 +22,7 @@ import Padre6 from './components/Props/Padre6.vue';
   <h1>Hola Mundo</h1>
   <Hijo5/>
   <Padre6/>
+  <Ejemplo1/>
 </template>
 
 <style scoped>
