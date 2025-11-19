@@ -1,8 +1,8 @@
 <template>
     <div class="contador">
-        <button>-</button>
-        <span></span>
-        <button>+</button>
+        <button @click="decrementar">-</button>
+        <span>{{ cuenta }}</span>
+        <button @click="incrementar">+</button>
     </div>
 </template>
 

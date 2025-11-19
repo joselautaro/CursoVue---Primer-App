@@ -1,35 +1,57 @@
 <template>
-    <h1>Hola Mundo</h1>
+    <div class="app">
+        <header class="cabecera">
+          <h1>Ecommerce</h1>
+        </header>
+        <main class="principal">
+        <ListaProductos @agregar-al-carrito="handleAgregarAlCarrito"/>
+        <Carrito/>
+        </main>
+    </div>
 </template>
 <script setup>
+
+import Carrito from './components/Carrito.vue';
+import ListaProductos from './components/ListaProductos.vue';
+import { useCarrito } from './composables/useCarrito';
+
+const {agregar} = useCarrito();
+
+const handleAgregarAlCarrito = (producto) =>{
+  agregar(producto)
+}
+// import Contador from './components/Contador.vue';
+
+// export default{
+//   components: {ListaProductos, Carrito},
+//   methods:{
+//     agregarAlCarrito(producto){
+//       const {agregar} = useCarrito();
+//       agregar(producto)
+//     }
+//   }
+
+// }
+
 
 </script>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.app{
+  width: 90%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.cabecera{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.principal{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  gap: 16px;
+  margin-top: 20px;
 }
 </style>

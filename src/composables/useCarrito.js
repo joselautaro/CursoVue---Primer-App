@@ -4,7 +4,7 @@ const estado = reactive({
     items: []
 })
 
-export const useCarrito = () =>{
+export function useCarrito(){
     function agregar(producto){
         const existente = estado.items.find(it => it.id === producto.id);
 
@@ -36,13 +36,13 @@ export const useCarrito = () =>{
         }
     }
 
-    const cantidad = computed(() =>{
-        estado.items.reduce((ac, it) => ac + (it.cantidad || 0), 0);
-    })
+    const cantidad = computed(() =>
+        estado.items.reduce((ac, it) => ac + (it.cantidad || 0), 0)
+    )
 
-    const total = computed(() =>{
-        estado.items.reduce((ac, it) => ac + it.precio * (it.cantidad || 1), 0);
-    })
+    const total = computed(() =>
+        estado.items.reduce((ac, it) => ac + it.precio * (it.cantidad || 1), 0)
+    )
 
     return{estado, agregar, quitar, reducirCantidad, cantidad, total};
 }
